@@ -104,7 +104,7 @@ export default function PokemonGrid() {
 
 
             <section id="Projects"
-                className="w-fit mx-auto grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 justify-items-center justify-center gap-y-20 gap-x-14 mt-10 mb-5">
+                className="w-fit mx-auto grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 justify-items-center justify-center gap-y-10 gap-x-10 mt-10 mb-5">
                 {/* Show skeleton cards while loading */}
                 {loading ? (
                     Array.from({ length: 6 }).map((_, index) => (
@@ -115,7 +115,7 @@ export default function PokemonGrid() {
                         <div key={pokemon.id} className="w-72 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
                             <a href={`/pokemon/${pokemon.id}`}>
                                 <img src={pokemon.sprites.other["official-artwork"].front_default} // Rendering Pokémon image
-                                    alt={pokemon.name} className="h-80 w-72 object-cover rounded-t-xl" />
+                                    alt={pokemon.name} className="h-80 w-72 object-cover rounded-t-xl p-10" />
                                 <div className="px-4 py-3 w-72">
                                     <span className="text-gray-400 mr-3 uppercase text-xs">ID: {pokemon.id}</span>
                                     <p className="text-lg font-bold text-black truncate block capitalize">{pokemon.name}</p>

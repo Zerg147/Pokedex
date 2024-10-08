@@ -1,5 +1,4 @@
 import PokemonGrid from "@/components/PokemonGrid";
-import PokemonTypes from "@/components/PokemonTypes";
 
 export default function Home() {
   return (
